@@ -234,4 +234,20 @@ create table if not exists Zakljucna(
 	
 );
 
+-- -----------------------------------------------------
+-- Table Smer-Predmet
+-- -----------------------------------------------------
+
+DROP TABLE IF EXISTS `Smer_Predmet` ;
+
+create table if not exists Smer_Predmet(
+	id_smera int not null,
+	id_predmeta int not null,
+	godina smallint not null,
+	PRIMARY KEY (id_smera, id_predmeta),
+	FOREIGN KEY (id_smera) references Smer(id),
+	FOREIGN KEY (id_predmeta) references Predmet(id)
+);
+
+
 

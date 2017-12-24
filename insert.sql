@@ -91,3 +91,156 @@ insert into Smer values
 	(3, 'Prirodni', 'Vecinski se izucavaju prirodne nauke', NULL),
 	(4, 'Matematicki', 'Vecinski se izucava matematika i informatika', NULL);
 
+insert into Status values
+	(1, 'Aktivan', NULL),
+	(2, 'Zavrisio', NULL),
+	(3, 'Izbacen', NULL),
+	(4, 'Ispisao se', NULL);
+
+insert into Odeljenje values
+	(1, 'Matematicari 1', 4, 3, 4),
+	(2, 'Prirodnjaci 1', 3, 10, 3),
+	(3, 'Drustvenjaci 1', 2, 4, 1),
+	(4, 'jezicari', 0 ,15 ,2 ),
+	(5, 'Prirodnjaci 2', 1,11 , 3);
+
+insert into Ucenik values
+	(1, 'Ranko', 'Zeravica', 'Beograd', '1999-12-12', 0.00,'Carigradska 5', 1, 1),
+	(2, 'Milena', 'Kuburovic', 'Beograd', '1999-12-18', 0.00,'Vidovdanska bb', 1, 1),
+	(3, 'Milan', 'Mladenovic', 'Beograd', '1999-5-12', 0.00,'Mladenovacka 2', 1, 1),
+	(4, 'Petar', 'Petrovic', 'Beograd', '1999-7-13', 0.00,'Tosin bunar 2', 1, 1),
+	(5, 'Milos', 'Markovic', 'Mladenovac', '1999-1-22', 0,'Trebinjska 1', 1, 1),
+	(6, 'Rade', 'Markovic', 'Kraljevo', '2000-1-22', 0,'Bilecka 1', 3, 1),
+	(7, 'Nikola', 'Jovanovic', 'Beograd', '1998-10-2', 0,'Kneza Milosa 32', 4, 1),
+
+	(8, 'KAtarina', 'Jovanovic', 'Beograd', '2000-12-12', 0,'Kneza Milosa 32', 1, 2),
+	(9, 'Milica', 'Milosevic', 'Beograd', '2000-12-18', 0,'Hajduk Stanka bb', 1, 2),
+	(10, 'Milan', 'Andric', 'Beograd', '2000-5-12', 0,'Petrovacka 2', 1, 2),
+	(11, 'Jovica', 'Petrovic', 'Beograd', '2000-7-13', 0,'Ruska  2', 1, 2),
+	(12, 'Andre', 'Stevanovic', 'Beograd', '2000-8-22', 0,'Bulevar kralja Aleksandra 1', 1, 2),
+	
+	(13, 'Ivana', 'Djukic', 'Beograd', '2001-11-12', 0,'PEtra Kocica 32', 1, 3),
+	(14, 'Svetislav', 'Pesic', 'Beograd', '2001-2-18', 0,'Njegoseva 17', 1, 3),
+	(15, 'Dusko', 'Vujosevic', 'Beograd', '2001-5-2', 0,'Ustanicka 2', 1, 3),
+	(16, 'Petar', 'Milosavljvic', 'Beograd', '2001-4-3', 0,'Proleterskih brigada  2', 1, 3),
+	(17, 'Aleksej', 'Nikolic', 'Beograd', '2001-8-22', 0,'Bulevar kralja Aleksandra 256', 1, 3),
+
+	(18, 'KAtarina', 'Veljkovic', 'Beograd', '1998-12-12', 0,'Kneza Viseslava 2', 1, 4),
+	(19, 'Milica', 'Mandic', 'Beograd', '1998-12-18', 0,'Obalskih Radnika 13', 1, 4),
+	(20, 'Milan', 'Mitrovic', 'Beograd', '1998-5-12', 0,'Neznanog junaka 2', 1, 4),
+	(21, 'Tomislav', 'Vucic', 'Beograd', '1998-7-13', 0,'Uzicka  2', 1, 4),
+	(22, 'Aleksandar', 'Nikolic', 'Beograd', '1998-8-22', 0,'Bulevar kralja Aleksandra KAradjordevica1', 1, 4),
+	
+	(23, 'Marijana', 'Jovanovic', 'Beograd', '2003-12-12', 0,'Kneza Milosa 32', 2, 3),
+	(24, 'Milica', 'Milosevic', 'Beograd', '2003-12-18', 0,'Hajduk Stanka bb', 2, 3),
+	(25, 'Miljana', 'Andric', 'Beograd', '2003-5-12', 0,'Petrovacka 2', 2, 3),
+	(26, 'Natasa', 'Petrovic', 'Beograd', '2003-7-13', 0,'Ruska  2', 2, 3),
+	(27, 'Bojana', 'Stevanovic', 'Beograd', '2002-8-22', 0,'Bulevar kralja Aleksandra 1', 2, 3);
+
+insert into Izostanci values
+	(1, '2017-10-5', 6, TRUE),
+	(1, '2017-10-6', 6, TRUE),
+	(1, '2017-10-7', 6, TRUE),
+	(2, '2017-11-5', 6, TRUE),
+	(3, '2017-11-5', 3, FALSE),
+	(22, '2015-12-5', 6, TRUE),
+	(12, '2016-10-5', 6, TRUE);
+
+insert into Staratelj values
+	(11, 'Radenko', 'Zeravica', '+381651235645'),
+	(12, 'Zivana', 'Zeravica','+381621237845'),
+	(21, 'Milan', 'Kuburovic','nepoznat'),
+	(22, 'Marija', 'Kuburovic', 'nepoznat'),
+	(31, 'Miljan', 'Mladenovic','+381651235645'),
+	(32, 'Milijana', 'Mladenovic','+381621237845'),
+	(41, 'Milan', 'Petrovic', 'nepoznat'),
+	(42, 'Marija', 'Petrovic', 'nepoznat'),
+	(51, 'Radenko', 'Markovic', '+381651235645'),
+	(52, 'Zivana', 'MArkovic', '+381621237845'),
+	(61, 'Milan', 'Jovanovic', 'nepoznat'),
+	(62, 'Marija', 'Jovanovic', 'nepoznat'),
+	(71, 'Radenko', 'Milosevic','+381651235645'),
+	(72, 'Zivana', 'Milosevic', '+381621237845'),
+	(81, 'Milan', 'Andric', 'nepoznat'),
+	(82, 'Marija', 'Andric', 'nepoznat'),
+	(91, 'Petko', 'Stevanovic','+381651235645'),
+	(92, 'Jovnka', 'Stevanovic', '+381621237845'),
+	(101, 'Milan', 'Djukic', 'nepoznat'),
+	(102, 'Marija', 'Djukic','nepoznat'),
+	(111, 'Ivan', 'PEsic', '+381651235645'),
+	(112, 'Mitar', 'Pesic','+381621237845'),
+	(121, 'Milan', 'Vujosevic', 'nepoznat'),
+	(122, 'Marija', 'Vujosevic','nepoznat'),
+	(131, 'Bozidar', 'Milosavljevic','+381651235645'),
+	(132, 'Mihajlo', 'Milosavljevic', '+381621237845'),
+	(141, 'Milan', 'Nikolic', 'nepoznat'),
+	(142, 'Marija', 'Nikolic','nepoznat'),
+	(151, 'Radenko', 'Veljkovic', '+381651235645'),
+	(152, 'Zivana', 'Mandic', '+381621237845'),
+	(161, 'Milan', 'Mitrovic', 'nepoznat'),
+	(162, 'Marija', 'Vucic', 'nepoznat');
+
+insert into Ucenik_Staratelj values
+	(1, 11),
+	(1, 12),
+	(2, 21),
+	(2, 22),
+	(3, 31),
+	(3, 32),
+	(4, 41),
+	(4, 42),
+	(5, 51),
+	(5, 52),
+	(6, 51),
+	(6, 52),
+	(7, 61),
+	(7, 62),
+	(8, 61),
+	(8, 62),
+	(9, 71),
+	(9, 72),
+	(10, 81),
+	(10, 82),
+	(11, 41),
+	(11, 42),
+	(12, 91),
+	(12, 92),
+	(13, 101),
+	(13, 102),
+	(14, 111),
+	(14, 112),
+	(15, 121),
+	(15, 122),
+	(16, 131),
+	(16, 132),
+	(17, 141),
+	(17, 142),
+	(18, 151),
+	(19, 152),
+	(20, 161),
+	(21, 162),
+	(22, 141),
+	(22, 142),
+
+	
+	(23, 61),
+	(23, 62),
+	(24, 71),
+	(24, 72),
+	(25, 81),
+	(25, 82),
+	(26, 91),
+	(26, 92),
+	(27, 101),
+	(27, 102);
+
+
+	
+
+
+
+
+
+
+
+	
