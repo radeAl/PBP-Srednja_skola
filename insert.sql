@@ -27,15 +27,15 @@ insert into Nastavnik values
 	(25, 'Rastimir', 'Mihic', 'Profesor umetnosti');
 
 insert into Predmet values
-	(1, 'Matematika 1', 'Skupovi , algebarksi izrazi'),
+	(1456, 'Matematika 1', 'Skupovi , algebarksi izrazi'),
 	(2, 'Matematika 2', 'Kvadratna jednacina, Jednacine viseg reda , Kvadratne nejednacine, funkcije'),
 	(3, 'Matematika 3', ' logaritmi, trigonometriske  funkcije, nizov, limesi'),
 	(4, 'Matematika 4', 'izvodi, integrali'),
-	(44, 'Matematika izborni', 'izvodi, integrali'),
+	(4444, 'Matematika izborni', 'izvodi, integrali'),
 	(5, 'Srpski jezik 1', 'Padezi Glasovne promene - anticka knjizevnost'),
 	(6, 'Srpski jezik 2', 'Padezi Glasovne promene - anticka knjizevnost'),
 	(7, 'Srpski jezik 3', 'Padezi Glasovne promene - anticka knjizevnost'),
-	(8, 'Srpski jezik 4', 'Padezi Glasovne promene - anticka knjizevnost'),
+	(811, 'Srpski jezik 4', 'Padezi Glasovne promene - anticka knjizevnost'),
 	(8, 'Srpski jezik izorni', 'Padezi Glasovne promene - anticka knjizevnost'),
 	(9, 'Engleski jezik 1', 'Sadasnje vreme'),
 	(10, 'Engleski jezik 2', 'Sadasnje vreme'),
@@ -70,7 +70,7 @@ insert into Predmet values
 	(39, 'Likovno 2', 'Crtanje  prirode'),
 	(40, 'Likovno 3', 'Crtanje portreta'),
 	(41, 'Muzicko 1', 'Klasicna muzika'),
-	(41, 'Muzicko 2', 'Instrumenti muzika'),
+	(411, 'Muzicko 2', 'Instrumenti muzika'),
 	(42, 'Muzicko 3', 'Srpska muzika'),
 	(43, 'Fizika 1', 'Statika'),
 	(44, 'Fizika 2', 'Dinamika'),
@@ -86,8 +86,8 @@ insert into Predmet values
 	(54, 'Hemija 4', 'Organska hemija');
 
 insert into Smer values	
-	(1, 'Drustveni', 'Vecinski se izucavaju drustvene nauke'),
-	(2, 'Jezicki', 'Vecinsk se izucavaju jezic'),
-	(3, 'Prirodni', 'Vecinski se izucavaju prirodne nauke'),
-	(4, 'Matematicki', 'Vecinski se izucava matematika i informatika');
+	(1, 'Drustveni', 'Vecinski se izucavaju drustvene nauke', NULL),
+	(2, 'Jezicki', 'Vecinsk se izucavaju jezic', NULL),
+	(3, 'Prirodni', 'Vecinski se izucavaju prirodne nauke', NULL),
+	(4, 'Matematicki', 'Vecinski se izucava matematika i informatika', NULL);
 
