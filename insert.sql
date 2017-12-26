@@ -255,6 +255,9 @@ insert into Zakljucna values
 	(6, 15, 5),
 	(6, 22, 5), 
 	(6,11,5);
+insert into Predaje values
+	(1,3, 1),
+	(1,4, 1)
 
 
 	

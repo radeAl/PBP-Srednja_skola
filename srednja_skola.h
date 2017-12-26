@@ -45,10 +45,12 @@ MYSQL_RES* executeQuery(char* query);
 
 void chooseOption();
 void ucenici(MYSQL* connection);
-void profesori(MYSQL* connection);
+void nastavnici(MYSQL* connection);
 void odeljenja(MYSQL* connection);
 void predmeti(MYSQL* connection);
 void smerovi(MYSQL* connection);
+
+
 void pretrazi_ucenika(MYSQL* connection);
 void prikazi_ucenika(int id, MYSQL* connection);
 void dodaj_ucenika(MYSQL* connection);
@@ -58,6 +60,11 @@ void izmeni_osnovne_podatke(int id, MYSQL* connection);
 void izmeni_staratelja(int id, MYSQL* connection);
 void promeni_status(int id, MYSQL* connection);
 void promeni_odeljenje(int id, MYSQL* connection);
+
+void pretrazi_nastavnika(MYSQL* connection);
+void prikazi_nastavnika(int id, MYSQL* connection);
+void dodaj_nastavnika(MYSQL* connection);
+void izmeni_nastavnika(int id, MYSQL* connection);
 
 
 #endif

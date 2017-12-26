@@ -35,7 +35,7 @@ int main(int argc, char **argv)
       ucenici(connection);
       break;
     case 2:
-     // profesori(connection);
+      nastavnici(connection);
       break;
     case 3:
       //predmeti(connection);
