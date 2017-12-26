@@ -105,37 +105,37 @@ insert into Odeljenje values
 	(5, 'Prirodnjaci 2', 1,11 , 3);
 
 insert into Ucenik values
-	(1, 'Ranko', 'Zeravica', 'Beograd', '1999-12-12', 0.00,'Carigradska 5', 1, 1),
-	(2, 'Milena', 'Kuburovic', 'Beograd', '1999-12-18', 0.00,'Vidovdanska bb', 1, 1),
-	(3, 'Milan', 'Mladenovic', 'Beograd', '1999-5-12', 0.00,'Mladenovacka 2', 1, 1),
-	(4, 'Petar', 'Petrovic', 'Beograd', '1999-7-13', 0.00,'Tosin bunar 2', 1, 1),
-	(5, 'Milos', 'Markovic', 'Mladenovac', '1999-1-22', 0,'Trebinjska 1', 1, 1),
-	(6, 'Rade', 'Markovic', 'Kraljevo', '2000-1-22', 0,'Bilecka 1', 3, 1),
-	(7, 'Nikola', 'Jovanovic', 'Beograd', '1998-10-2', 0,'Kneza Milosa 32', 4, 1),
+	(1, 'Ranko', 'Zeravica', 'Beograd', '1999-12-12', 'Carigradska 5', 0.00,1, 1),
+	(2, 'Milena', 'Kuburovic', 'Beograd', '1999-12-18', 'Vidovdanska bb',0.00, 1, 1),
+	(3, 'Milan', 'Mladenovic', 'Beograd', '1999-5-12', 'Mladenovacka 2',0.00, 1, 1),
+	(4, 'Petar', 'Petrovic', 'Beograd', '1999-7-13', 'Tosin bunar 2',0.00, 1, 1),
+	(5, 'Milos', 'Markovic', 'Mladenovac', '1999-1-22', 'Trebinjska 1',0, 3, 1),
+	(6, 'Rade', 'Markovic', 'Kraljevo', '2000-1-22', 'Bilecka 1',0, 1, 1),
+	(7, 'Nikola', 'Jovanovic', 'Beograd', '1998-10-2', 'Kneza Milosa 32',0, 4, 1),
 
-	(8, 'KAtarina', 'Jovanovic', 'Beograd', '2000-12-12', 0,'Kneza Milosa 32', 1, 2),
-	(9, 'Milica', 'Milosevic', 'Beograd', '2000-12-18', 0,'Hajduk Stanka bb', 1, 2),
-	(10, 'Milan', 'Andric', 'Beograd', '2000-5-12', 0,'Petrovacka 2', 1, 2),
-	(11, 'Jovica', 'Petrovic', 'Beograd', '2000-7-13', 0,'Ruska  2', 1, 2),
-	(12, 'Andre', 'Stevanovic', 'Beograd', '2000-8-22', 0,'Bulevar kralja Aleksandra 1', 1, 2),
+	(8, 'KAtarina', 'Jovanovic', 'Beograd', '2000-12-12', 'Kneza Milosa 32',0, 1, 2),
+	(9, 'Milica', 'Milosevic', 'Beograd', '2000-12-18', 'Hajduk Stanka bb',0, 1, 2),
+	(10, 'Milan', 'Andric', 'Beograd', '2000-5-12', 'Petrovacka 2',0, 1, 2),
+	(11, 'Jovica', 'Petrovic', 'Beograd', '2000-7-13', 'Ruska  2', 0,1, 2),
+	(12, 'Andre', 'Stevanovic', 'Beograd', '2000-8-22', 'Bulevar kralja Aleksandra 1',0, 1, 2),
 	
-	(13, 'Ivana', 'Djukic', 'Beograd', '2001-11-12', 0,'PEtra Kocica 32', 1, 3),
-	(14, 'Svetislav', 'Pesic', 'Beograd', '2001-2-18', 0,'Njegoseva 17', 1, 3),
-	(15, 'Dusko', 'Vujosevic', 'Beograd', '2001-5-2', 0,'Ustanicka 2', 1, 3),
-	(16, 'Petar', 'Milosavljvic', 'Beograd', '2001-4-3', 0,'Proleterskih brigada  2', 1, 3),
-	(17, 'Aleksej', 'Nikolic', 'Beograd', '2001-8-22', 0,'Bulevar kralja Aleksandra 256', 1, 3),
+	(13, 'Ivana', 'Djukic', 'Beograd', '2001-11-12', 'PEtra Kocica 32',0, 1, 3),
+	(14, 'Svetislav', 'Pesic', 'Beograd', '2001-2-18', 'Njegoseva 17',0, 1, 3),
+	(15, 'Dusko', 'Vujosevic', 'Beograd', '2001-5-2', 'Ustanicka 2',0, 1, 3),
+	(16, 'Petar', 'Milosavljvic', 'Beograd', '2001-4-3', 'Proleterskih brigada  2',0, 1, 3),
+	(17, 'Aleksej', 'Nikolic', 'Beograd', '2001-8-22', 'Bulevar kralja Aleksandra 256',0, 1, 3),
 
-	(18, 'KAtarina', 'Veljkovic', 'Beograd', '1998-12-12', 0,'Kneza Viseslava 2', 1, 4),
-	(19, 'Milica', 'Mandic', 'Beograd', '1998-12-18', 0,'Obalskih Radnika 13', 1, 4),
-	(20, 'Milan', 'Mitrovic', 'Beograd', '1998-5-12', 0,'Neznanog junaka 2', 1, 4),
-	(21, 'Tomislav', 'Vucic', 'Beograd', '1998-7-13', 0,'Uzicka  2', 1, 4),
-	(22, 'Aleksandar', 'Nikolic', 'Beograd', '1998-8-22', 0,'Bulevar kralja Aleksandra KAradjordevica1', 1, 4),
+	(18, 'KAtarina', 'Veljkovic', 'Beograd', '1998-12-12', 'Kneza Viseslava 2',0, 1, 4),
+	(19, 'Milica', 'Mandic', 'Beograd', '1998-12-18', 'Obalskih Radnika 13',0, 1, 4),
+	(20, 'Milan', 'Mitrovic', 'Beograd', '1998-5-12', 'Neznanog junaka 2', 0,1, 4),
+	(21, 'Tomislav', 'Vucic', 'Beograd', '1998-7-13', 'Uzicka  2', 0,1, 4),
+	(22, 'Aleksandar', 'Nikolic', 'Beograd', '1998-8-22', 'Bulevar kralja Aleksandra KAradjordevica1',0, 1, 4),
 	
-	(23, 'Marijana', 'Jovanovic', 'Beograd', '2003-12-12', 0,'Kneza Milosa 32', 2, 3),
-	(24, 'Milica', 'Milosevic', 'Beograd', '2003-12-18', 0,'Hajduk Stanka bb', 2, 3),
-	(25, 'Miljana', 'Andric', 'Beograd', '2003-5-12', 0,'Petrovacka 2', 2, 3),
-	(26, 'Natasa', 'Petrovic', 'Beograd', '2003-7-13', 0,'Ruska  2', 2, 3),
-	(27, 'Bojana', 'Stevanovic', 'Beograd', '2002-8-22', 0,'Bulevar kralja Aleksandra 1', 2, 3);
+	(23, 'Marijana', 'Jovanovic', 'Beograd', '2003-12-12', 'Kneza Milosa 32',0, 2, 3),
+	(24, 'Milica', 'Milosevic', 'Beograd', '2003-12-18', 'Hajduk Stanka bb',0, 2, 3),
+	(25, 'Miljana', 'Andric', 'Beograd', '2003-5-12', 'Petrovacka 2',0, 2, 3),
+	(26, 'Natasa', 'Petrovic', 'Beograd', '2003-7-13', 'Ruska  2',0, 2, 3),
+	(27, 'Bojana', 'Stevanovic', 'Beograd', '2002-8-22', 'Bulevar kralja Aleksandra 1',0, 2, 3);
 
 insert into Izostanci values
 	(1, '2017-10-5', 6, TRUE),
@@ -144,7 +144,8 @@ insert into Izostanci values
 	(2, '2017-11-5', 6, TRUE),
 	(3, '2017-11-5', 3, FALSE),
 	(22, '2015-12-5', 6, TRUE),
-	(12, '2016-10-5', 6, TRUE);
+	(12, '2016-10-5', 6, TRUE),
+	(6, '2016-10-5', 6, TRUE);
 
 insert into Staratelj values
 	(11, 'Radenko', 'Zeravica', '+381651235645'),
@@ -237,10 +238,23 @@ insert into Ucenik_Staratelj values
 
 	
 
+insert into Smer_Predmet values
+	(4, 4, 4),
+	(4, 5, 4),
+	(4, 3, 3);
 
-
-
-
+insert into Ocena values
+	(6, 4, '2016-5-5', 5),
+	(6, 4, '2016-6-5', 5),
+	(6, 4, '2016-12-5', 5),
+	(6, 3, '2016-5-5', 1),
+	(6, 3, '2017-6-2', 5),
+	(6,5, '2016-5-16', 4);
+insert into Zakljucna values
+	(6, 3, 3),
+	(6, 15, 5),
+	(6, 22, 5), 
+	(6,11,5);
 
 
 	

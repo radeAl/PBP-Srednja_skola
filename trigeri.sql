@@ -28,7 +28,7 @@ create trigger ocena_unos before insert  on Ocena
 			signal sqlstate '45000' set message_text = "Nije moguce menjati stanje uceniku koji nije aktivan";
 		end if;
 		set @zakljucena = (select count(*) from Zakljucna 
-							where id_studenta = new.id_ucenika and id_predmeta = new.id_predmeta);
+							where id_ucenika = new.id_ucenika and id_predmeta = new.id_predmeta);
 		if (@zaklucena > 0) then
 			signal sqlstate '45000' set message_text = "Nije moguce dodavati ocene nakon sto je ocena zakljucena.";
 		end if;
@@ -49,7 +49,7 @@ create trigger ocena_izmena before update on Ocena
 		end if;
 
 		set @zakljucena = (select count(*) from Zakljucna 
-							where id_studenta = new.id_ucenika and id_predmeta = new.id_predmeta);
+							where id_ucenika = new.id_ucenika and id_predmeta = new.id_predmeta);
 		
 		if (@zaklucena > 0) then
 			signal sqlstate '45000' set message_text = "Nije moguce menjati ocene nakon sto je ocena zakljucena.";
@@ -70,17 +70,17 @@ create trigger unos_zakljucne after insert on Zakljucna
 					where new.id_ucenika = id_ucenika
 					);
 		update Ucenik set prosek = @prosek
-			where id = id_ucenika;
+			where id = new.id_ucenika;
 end$
 
 create trigger izmena_zakljucne after update on Zakljucna
 	for each row
 	begin 
-		set @prosek = (select sum(ocena)/count(*) from Zakljucna
+		set @prosek = (select (sum(ocena)*1.00)/(1.00*count(*)) from Zakljucna
 					where new.id_ucenika = id_ucenika
 					);
 		update Ucenik set prosek = @prosek
-			where id = id_ucenika;
+			where id = new.id_ucenika;
 end$
 
 
@@ -88,7 +88,7 @@ end$
 -- Ako se promeni godina na 0 svim ucenicima tog odeljenja koji su imali aktivan status status se menja u zavrsio
 -- Zabranjuje dodeljivanje odeljenja nastavniku koji vec ima aktivno odeljenje
 
-create trigger unos_odeljenja after insert on Odeljenje
+create trigger unos_odeljenja  before insert on Odeljenje
 	for each row
 	begin
 		if (new.godina not between 0 and 4) then
@@ -100,7 +100,7 @@ create trigger unos_odeljenja after insert on Odeljenje
 		end if;
 		
 		set @razredni = (select count(*) from Odeljenje
-					  where id_razrednog = new.id_razrednog and godina > 0 and id_odeljenja <> new.id
+					  where id_razrednog = new.id_razrednog and godina > 0 
 					);
 		if (@razredni > 0) then
 			signal sqlstate '45000' set message_text = "JEdan profesor moze da bude razredni najvise jednom odeljenju";
@@ -109,7 +109,7 @@ create trigger unos_odeljenja after insert on Odeljenje
 
 	end $
 
-create trigger izmena_odeljenja after update on Odeljenje
+create trigger izmena_odeljenja before update on Odeljenje
 	for each row
 	begin
 		if (new.godina not between 0 and 4) then
@@ -120,8 +120,7 @@ create trigger izmena_odeljenja after update on Odeljenje
 			where id_odeljenja = new.id;
 		end if;
 		set @razredni = (select count(*) from Odeljenje
-					  where id_razrednog = new.id_razrednog and godina > 0 and id_odeljenja <> new.id
-					);
+					  where id_razrednog = new.id_razrednog and godina > 0);
 		if (@razredni > 0) then
 			signal sqlstate '45000' set message_text = "JEdan profesor moze da bude razredni najvise jednom odeljenju";
 		end if;

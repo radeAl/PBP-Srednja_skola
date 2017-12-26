@@ -106,7 +106,7 @@ create table if not exists Ucenik(
 	mesto_rodjenja varchar(45) not null,
 	datum_rodjenja date not null,
 	adresa varchar(45),
-	prosek decimal(5) not null default 0,
+	prosek float not null default 0.0,
 	id_status int not null,
 	id_odeljenja int not null,
 	PRIMARY KEY(id),
