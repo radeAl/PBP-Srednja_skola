@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 		printf("Izaberite opciju:\n");
 
 	  	printf("1.Podaci o ucenicima\n");
-	  	printf("2.Podaci o profesoria\n");
+	  	printf("2.Podaci o nastavnicima\n");
 	  	printf("3.Podaci o predmetima\n");
 	  	printf("4.Podaci o odeljenjima\n");
 	  	printf("5.Podaci o smerovima\n");
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
       nastavnici(connection);
       break;
     case 3:
-      //predmeti(connection);
+      predmeti(connection);
       break;
     case 4:
       //odeljenja(connection);

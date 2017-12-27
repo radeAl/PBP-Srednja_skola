@@ -8,6 +8,8 @@
 #include <mysql/mysql.h>
 #include <stdarg.h>
 
+#define _GNU_SOURCE
+
 #define QUERY_SIZE 256
 #define BUFFER_SIZE 100
 #define DATE_SIZE 12
@@ -65,6 +67,11 @@ void pretrazi_nastavnika(MYSQL* connection);
 void prikazi_nastavnika(int id, MYSQL* connection);
 void dodaj_nastavnika(MYSQL* connection);
 void izmeni_nastavnika(int id, MYSQL* connection);
+
+void pretrazi_predmete(MYSQL* connection);
+void dodaj_predmet(MYSQL* connection);
+void prikazi_predmet(int id, MYSQL* connection);
+void dodeli_nastavnika(int id, MYSQL* connection);
 
 
 #endif
