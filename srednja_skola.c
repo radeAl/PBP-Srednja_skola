@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	  	printf("5.Podaci o smerovima\n");
 	  	printf("6. Unos i izmena ocena\n");
 
-	  	printf("6.Kraj\n");
+	  	printf("7.Kraj\n");
 
 	  	scanf("%d", &option);
 
@@ -44,7 +44,7 @@ int main(int argc, char **argv)
       //odeljenja(connection);
       break;
     case 5:
-      //smerovi(connection);
+      smerovi(connection);
       break;
     case 6:
       exit(EXIT_SUCCESS);

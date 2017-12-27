@@ -73,5 +73,10 @@ void dodaj_predmet(MYSQL* connection);
 void prikazi_predmet(int id, MYSQL* connection);
 void dodeli_nastavnika(int id, MYSQL* connection);
 
+void pretrazi_smerove(MYSQL* connection);
+void prikazi_smer(int id, MYSQL* connection);
+void dodaj_smer(MYSQL* connection);
+void dodaj_smeru_predmet(int id, MYSQL* connection);
+
 
 #endif
