@@ -29,7 +29,7 @@ create trigger ocena_unos before insert  on Ocena
 		end if;
 		set @zakljucena = (select count(*) from Zakljucna 
 							where id_ucenika = new.id_ucenika and id_predmeta = new.id_predmeta);
-		if (@zaklucena > 0) then
+		if (@zakljucena > 0) then
 			signal sqlstate '45000' set message_text = "Nije moguce dodavati ocene nakon sto je ocena zakljucena.";
 		end if;
 		if (new.ocena not between 1 and 5) then
@@ -51,7 +51,7 @@ create trigger ocena_izmena before update on Ocena
 		set @zakljucena = (select count(*) from Zakljucna 
 							where id_ucenika = new.id_ucenika and id_predmeta = new.id_predmeta);
 		
-		if (@zaklucena > 0) then
+		if (@zakljucena > 0) then
 			signal sqlstate '45000' set message_text = "Nije moguce menjati ocene nakon sto je ocena zakljucena.";
 		end if;
 	

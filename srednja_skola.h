@@ -7,6 +7,7 @@
 #include <stdbool.h>
 #include <mysql/mysql.h>
 #include <stdarg.h>
+#include <math.h>
 
 #define _GNU_SOURCE
 
@@ -51,6 +52,7 @@ void nastavnici(MYSQL* connection);
 void odeljenja(MYSQL* connection);
 void predmeti(MYSQL* connection);
 void smerovi(MYSQL* connection);
+void ocene(MYSQL* connection);
 
 
 void pretrazi_ucenika(MYSQL* connection);
@@ -82,6 +84,10 @@ void prikazi_odeljenje(int id, MYSQL* connection);
 void pretrazi_odeljenja(MYSQL* connection);
 void dodaj_odeljenje(MYSQL* connection);
 void promeni_razrednog(int id, MYSQL* connection);
+
+void dodaj_ocenu(MYSQL* connection);
+void zakljuci_ocenu(MYSQL* connection);
+
 
 
 #endif

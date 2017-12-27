@@ -5,7 +5,7 @@ int main(int argc, char **argv)
 	
 	connection =  mysql_init(NULL);
 
-	check(mysql_real_connect(connection, "localhost", "root", "3458rade", "Srednja_skola",0, NULL, 0), mysql_error(connection));
+	check(mysql_real_connect(connection, "localhost", "root", "", "Srednja_skola",0, NULL, 0), mysql_error(connection));
 	
 	int option;
 
@@ -25,10 +25,10 @@ int main(int argc, char **argv)
 
 	  	scanf("%d", &option);
 
-	  	if (option > 6 || option <1)
+	  	if (option > 7 || option <1)
 	  		printf("\n\nNekorektno odabrana opcija. Molimo pokusajte ponovo.\n\n");
 
-	}while(option > 6 || option < 1);
+	}while(option > 7 || option < 1);
 
 	switch (option) {
     case 1:
@@ -47,6 +47,9 @@ int main(int argc, char **argv)
       smerovi(connection);
       break;
     case 6:
+      ocene(connection);
+      break;
+    case 7:
       exit(EXIT_SUCCESS);
       break;
   }
@@ -109,4 +112,5 @@ void podkategorija(char* naslov){
 	printf("\n------------------- %s ---------------------\n\n", naslov);
 }
 }
+
 

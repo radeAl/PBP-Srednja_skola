@@ -216,7 +216,7 @@ create table if not exists Ocena(
 -- -----------------------------------------------------
 -- Table Zakljucna
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `Zaklucna` ;
+DROP TABLE IF EXISTS `Zakljucna` ;
 
 create table if not exists Zakljucna(
 	id_ucenika int not null,

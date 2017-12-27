@@ -143,15 +143,13 @@ void prikazi_ucenika(int id, MYSQL* connection){
 							where Smer_Predmet.godina = Odeljenje.godina)", id);
 
 	rezultat = executeQuery(query);
+
+	
 	
 	//print(rezultat);
 
 	MYSQL_ROW row;
-	//MYSQL_FIELD *field;
 
-	  //field = mysql_fetch_field(result);
-
-	  //nt numOfField = mysql_num_fields(result);
 
 	Ocene o[BUFFER_SIZE];
 	int i = 0;
