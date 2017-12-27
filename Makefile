@@ -5,7 +5,8 @@ OBJ 	= srednja_skola.o	\
 				nastavnici.o \
 				ucenici.o\
 				predmeti.c\
-				smerovi.c
+				smerovi.c\
+				odeljenja.c\
 			
 
 %.o: %.c

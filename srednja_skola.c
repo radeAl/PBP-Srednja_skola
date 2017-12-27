@@ -41,7 +41,7 @@ int main(int argc, char **argv)
       predmeti(connection);
       break;
     case 4:
-      //odeljenja(connection);
+      odeljenja(connection);
       break;
     case 5:
       smerovi(connection);

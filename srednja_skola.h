@@ -78,5 +78,10 @@ void prikazi_smer(int id, MYSQL* connection);
 void dodaj_smer(MYSQL* connection);
 void dodaj_smeru_predmet(int id, MYSQL* connection);
 
+void prikazi_odeljenje(int id, MYSQL* connection);
+void pretrazi_odeljenja(MYSQL* connection);
+void dodaj_odeljenje(MYSQL* connection);
+void promeni_razrednog(int id, MYSQL* connection);
+
 
 #endif
